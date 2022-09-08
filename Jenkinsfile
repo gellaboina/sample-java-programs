@@ -1,4 +1,15 @@
 pipeline {
   agent any
-  steps {
-    step('git repo 
+  stages {
+    stage ('git repo https://github.com/gellaboina/sample-java-programs.git') {
+      step {
+        echo 'hello'
+      }
+      stage ('build') {
+        step {
+          echo 'mana'
+        }
+      }
+    }
+  }
+      
