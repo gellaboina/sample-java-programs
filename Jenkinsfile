@@ -12,6 +12,7 @@ pipeline {
           stage ('deploy') {
             step {
               echo 'oo'
+          stage ('tes
             }
         }
       }
