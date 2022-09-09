@@ -9,6 +9,11 @@ pipeline {
         step {
           echo 'mana'
         }
+          stage ('test') {
+            step {
+              echo 'goo'
+            }
+        }
       }
     }
   }
